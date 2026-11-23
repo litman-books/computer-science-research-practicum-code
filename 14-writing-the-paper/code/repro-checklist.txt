@@ -1,0 +1,51 @@
+# Draft Paper Pre-Flight Checklist (Week 14)
+
+Run this before you tag `draft-v1` and hand the paper to peer review. Every box must be true,
+or the paper is not done. Chapter 14 sections are noted in parentheses.
+
+## Structure (14.1)
+- [ ] All sections present: abstract, introduction, related work, methodology, results, discussion, conclusion/future work.
+- [ ] Methods/Results/Discussion firewall is clean: no interpretation in Results, no results in Methods (14.5).
+
+## Abstract (14.2)
+- [ ] All five moves present: context, gap, approach, result, significance.
+- [ ] The result move contains a real NUMBER with its uncertainty (CI or effect size).
+- [ ] Stands alone: no undefined acronyms, no "see Section 4."
+
+## Introduction (14.3)
+- [ ] CARS three moves: territory -> niche/gap -> occupy.
+- [ ] The gap is backed by a CITED absence, not a hunch.
+- [ ] Ends with an explicit bulleted contributions list (C1, C2, C3...).
+
+## Related Work (14.4)
+- [ ] Organized by approach, not paper-by-paper summary.
+- [ ] Each competitor represented at its strongest (no strawmen) (2 Cor. 13:1).
+- [ ] Your position stated: "In contrast, we ..."
+
+## Results integrity (14.5, ch.11-12)
+- [ ] EVERY run is reported; no inconvenient runs dropped (falsification = misconduct, 42 CFR 93).
+- [ ] Effect sizes + confidence intervals reported, not bare p-values (ASA 2019).
+- [ ] Multi-seed spread reported where applicable (Bouthillier et al. 2021).
+
+## Figures and tables (14.6)
+- [ ] Every figure/table referenced in text, in order, before it appears.
+- [ ] Captions stand alone (what is shown, units, n, what error bands mean).
+- [ ] Vector PDF/SVG, table captions above, figure captions below, honest non-truncated axes.
+
+## Citation hygiene (14.9)
+- [ ] EVERY references.bib entry verified against dblp / Semantic Scholar / publisher.
+- [ ] No reference taken on faith from an LLM; BibTeX copied from the real index.
+- [ ] No hallucinated, no leftover placeholder, no orphan citations.
+
+## Reproducibility (ch.9)
+- [ ] Environment pinned; seeds documented; data/splits described.
+- [ ] If an LLM was an instrument: model name + version + DATE + decoding settings + prompt recorded.
+- [ ] PDF compiles from a clean checkout of the repo.
+
+## AI disclosure (Appendix C)
+- [ ] Substantive AI-generated text/figures/code noted, ready to disclose per target venue.
+- [ ] No LLM listed as an author (never permitted). The human owns every claim.
+
+## Final pass
+- [ ] Read end-to-end as a hostile reviewer; weakest claim identified and supported.
+- [ ] `git tag draft-v1` created and pushed.

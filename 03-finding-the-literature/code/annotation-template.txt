@@ -1,0 +1,54 @@
+# Annotation — TEMPLATE (one per source, 100–200 words)
+
+Write this in the Zotero item's Notes field WHILE the paper is open.
+An annotation written from memory drifts from what the paper actually says.
+
+Five parts. The fourth (relevance) is the one beginners skip and reviewers live for.
+
+---
+
+## [Citation — full, correct, VERIFIED in dblp / Semantic Scholar]
+
+Author(s). "Title." Venue, Year. (DOI / arXiv id)
+
+**1. Summary (your own words):**
+The problem, the method, the key result — one or two sentences. If you can't
+summarize it, you haven't read it.
+
+**2. Method & evidence:**
+What did they actually DO? Dataset/benchmark, baseline(s), metric(s), and the
+headline number. (These become columns in your Chapter 4 comparison matrix.)
+
+**3. Relevance to MY project:**  <-- the most important line
+Why is this in my bibliography? Is it my baseline? A method I'll adapt? The gap
+I'm filling? The nearest competitor I must differentiate from?
+
+**4. Limitation / my critique:**
+What did they NOT address? Narrow benchmark? No error bars? Untested transfer to
+my domain? This is often where MY opening is.
+
+**5. Verification:** dblp ✓  Semantic Scholar ✓  read in full ✓   (remove #unverified tag)
+
+---
+
+## WORKED EXAMPLE
+
+## Jay, N., et al. "A Deep Reinforcement Learning Perspective on Internet Congestion Control." ICML 2019.
+
+**1. Summary:** Proposes Aurora, an RL agent that learns a congestion-control
+policy from experience rather than hand-tuned heuristics, and shows it can match
+or beat classic schemes on several network conditions.
+
+**2. Method & evidence:** RL (policy gradient) over a network simulator; baselines
+include TCP CUBIC and BBR; metric is a reward combining throughput, latency, and
+loss. Reports competitive performance across simulated link conditions.
+
+**3. Relevance to my project:** This is the canonical applied-AI anchor for my
+networking domain and my likely baseline — my contribution must differentiate
+from learned congestion control, not just from classic TCP.
+
+**4. Limitation / my critique:** Evaluated largely in simulation; sim-to-real
+transfer and stability under adversarial traffic are under-tested — a candidate
+gap for my work.
+
+**5. Verification:** dblp ✓  Semantic Scholar ✓  read in full ✓

@@ -1,0 +1,28 @@
+# Pilot Checklist (NeurIPS-style)
+
+A pilot is the cheapest place to confront the questions a reviewer will ask later.
+Fill this out for your 10% run, NOT your full run. Answer every item honestly —
+"No" now is a gift; "No" at submission is a desk reject.
+
+> The item *numbering and wording of the official NeurIPS Paper Checklist change
+> every cycle.* Re-read the target year's guide before you rely on it. The items
+> below are paraphrased to the spirit of recent (2025/2026) checklists.
+
+| # | Question the reviewer will ask | Pilot answer (Yes / No / N/A) | Evidence / where it lives |
+|---|--------------------------------|-------------------------------|---------------------------|
+| 1 | Do your claims match what the pilot actually shows (no overreach)? | | |
+| 2 | Are the limitations of the pilot stated? | | |
+| 3 | Is the full set of assumptions for any theory stated? | | |
+| 4 | Could a stranger reproduce the pilot from your repo + README? | | commit hash: |
+| 5 | Is code/data access described (even if released later)? | | repo URL: |
+| 6 | Are the data splits, hyperparameters, and how they were chosen specified? | | config file: |
+| 7 | Are error bars / variability across seeds reported (not a single run)? | | n seeds = |
+| 8 | Is the compute (hardware, hours, est. full-run cost) reported? | | est. full run: |
+| 9 | Does the work conform to the venue's ethics / integrity rules? | | |
+| 10 | Are broader impacts considered where relevant? | | |
+| 11 | Is AI assistance disclosed per the venue policy (Appendix C)? | | |
+| 12 | Are existing assets (data, models, code) properly credited & licensed? | | |
+
+**Stop rule.** If items 4, 6, 7, or 8 are "No" on the *pilot*, do not start the
+full run. Those four are the ones that turn a finished experiment into an
+unpublishable one.

@@ -1,0 +1,28 @@
+# Double-Blind Anonymity Checklist
+
+Top CS venues (NeurIPS, ICLR, ICML, CVPR via their systems) review double-anonymous:
+neither side sees the other's identity until camera-ready. De-anonymizing yourself can
+get a paper desk-rejected without review. Run this before you submit a paper FOR review
+and before you start reviewing a peer's.
+
+## As an AUTHOR — scrub yourself out
+- [ ] No author names / affiliations on the title page (acmart: use the `anonymous`
+      option → prints "ANONYMOUS AUTHOR(S)").
+- [ ] Self-citations are in the third person. NOT "in our prior work [4] we showed…"
+      → "Prior work [4] showed…".
+- [ ] Acknowledgements section removed or emptied (it names your advisor / lab / grant).
+- [ ] Grant / funding IDs stripped (they identify the institution).
+- [ ] Repo / data links anonymized (anonymous.4open.science, or an anonymized OSF view)
+      — a raw github.com/yourname link de-anonymizes you.
+- [ ] PDF metadata cleared (Author field in the document properties).
+- [ ] No identifying file paths, usernames, or hostnames in screenshots / logs.
+- [ ] Dataset you released is not named after you/your lab in the text.
+
+## As a REVIEWER — protect confidentiality
+- [ ] Do NOT paste the paper or its code into any public LLM (confidentiality breach;
+      forbidden by NeurIPS / IEEE / CVPR reviewer policies as of mid-2026).
+- [ ] Do NOT try to guess or look up who wrote it.
+- [ ] Treat the manuscript as confidential — don't share it, don't reuse its ideas.
+
+> De-anonymization is not always cheating — sometimes it's sloppiness. Either way the
+> outcome is the same: the reviewers can't unsee it. Run the list.

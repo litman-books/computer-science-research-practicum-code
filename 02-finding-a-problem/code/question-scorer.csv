@@ -1,0 +1,11 @@
+question_id,domain,question,feasible,interesting,novel,ethical,relevant,total,gap_status,baseline,benchmark_or_metric,notes
+q01,databases,"Does RAG-augmented prompting reduce query-plan latency vs a fine-tuned model on the JOB benchmark?",4,4,3,5,4,20,unconfirmed,LLMSTEER (arXiv:2411.02862),JOB / p95 latency,"need to confirm nobody measured latency this way"
+q02,software-engineering,"Does an agentic LLM reviewer detect more OWASP-class vulns on SWE-bench-Verified patches than a single-pass prompt?",4,5,4,5,5,23,confirmed,single-pass prompt + Semgrep,SWE-bench-Verified / recall,"c-CRAB (arXiv:2603.23448) future work names this"
+q03,security,"Are LLM phishing detectors more robust to prompt-injection-style evasion than feature-based filters?",3,5,4,4,5,21,unconfirmed,classic feature-based filter,labeled phishing set / F1,"verify the prompt-injection eval gap"
+q04,networking,"Does an RL congestion controller generalize to bufferbloat conditions unseen in training?",2,4,4,5,4,19,confirmed,Aurora (Jay et al. ICML 2019),emulated link / goodput,"Aurora future work flags out-of-distribution links"
+q05,architecture,"Can a small learned model match Hawkeye on cache-replacement with lower inference cost?",2,3,3,5,4,17,unconfirmed,Hawkeye (ISCA 2016),"miss rate / cycles","CONFIRM Hawkeye numbers before relying on them"
+q06,databases,"Too broad: How can AI improve database systems?",5,2,1,5,3,16,n/a,none,none,"FAILS: not a question, no edge -- kill"
+q07,hci,"Does AI-generated programming feedback improve student revision rates vs templated feedback?",3,5,3,3,5,19,unconfirmed,templated/rubric feedback,revision rate,"ethics: student data / IRB exempt? check 45 CFR 46.104(d)"
+q08,ar-vr,"Does generative adaptive difficulty reduce VR simulator sickness vs fixed difficulty?",3,4,4,4,4,19,unconfirmed,fixed-difficulty condition,SSQ score,"human-subjects -- ethics review applies"
+q09,software-engineering,"Not falsifiable: Is AI useful for software engineering?",5,1,1,5,2,14,n/a,none,none,"FAILS: cannot come back no -- kill"
+q10,data-science,"Does an LLM data-cleaning agent reduce manual cleaning time without lowering downstream model accuracy?",4,4,3,5,4,20,unconfirmed,manual/script cleaning,minutes + downstream accuracy,"two outcomes -- watch for cherry-picking"

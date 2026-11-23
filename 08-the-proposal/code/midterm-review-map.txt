@@ -1,0 +1,24 @@
+# Cumulative Midterm Review Map — Weeks 1–7 (the quiz also covers this week's Chapter 8)
+
+The Canvas midterm is an auto-graded quiz over the research methods of the first half. This
+map is your study sheet: each week, the one idea that will be tested, and the anchor you
+should be able to name from memory. Read down the table, then re-read any row you can't
+explain out loud in two sentences.
+
+| Wk | Chapter | The testable idea | Anchor to name | Common trap |
+|---|---|---|---|---|
+| 1 | What Is Research | Research = systematic production of *verifiable* new knowledge; reproducibility crisis | Baker 2016 (Nature, ~52% see a crisis; >70% failed to reproduce another's work) | Confusing development (build a tool) with research (test a claim) |
+| 2 | Finding a Problem | A gap is a *cited absence*, not a hunch; FINER/Heilmeier criteria | Swales CARS Move 2 ("establish a niche") | "X is important" is not a gap |
+| 3 | Finding the Literature | Four-layer toolkit: FIND / UNDERSTAND / SNOWBALL / MANAGE; verify every citation | Walters & Wilder 2023 (55% GPT-3.5 / 18% GPT-4 citations fabricated) | Trusting an LLM-listed reference without checking dblp/Semantic Scholar |
+| 4 | Synthesis & Matrix | Synthesis ≠ summary; the comparison matrix surfaces the gap | Rows=papers, cols=problem/method/data/baseline/metric/result/limitation | Summarizing each paper instead of comparing across them |
+| 5 | AI Across Domains | Decision ladder: Prompt → RAG → Fine-tune (LoRA/QLoRA) → Distill | RAG variants; retrieval (not generation) is the dominant failure | Reaching for fine-tuning when better retrieval would fix it |
+| 6 | RQ, Hypotheses, Variables | Falsifiable hypothesis; IV/DV/controls; four validity threats | Cook & Campbell 1979: statistical conclusion / internal / construct / external | A hypothesis you can't be wrong about isn't one |
+| 7 | Reproducible Design | Baselines, ablations, train/val/test, multi-seed, leakage | Bouthillier 2021 (variance); Kapoor & Narayanan 2023 (leakage, 294 papers/17 fields) | Scaling or feature-selecting *before* the split (leakage) |
+
+## How to study
+- Re-read the **Why This Matters** opener of each chapter — that's the thesis you'll be tested on.
+- Re-do the **one rep** you found hardest each week. Reps are conditioning; the quiz is game day.
+- For every anchor above, be able to state *what it claims* and *why it matters* — not the page number.
+
+> **Coach's Note —** The midterm quiz is not the midterm. *Your proposal* is the midterm.
+> The quiz checks that the vocabulary is in your hands; the proposal proves you can wield it.

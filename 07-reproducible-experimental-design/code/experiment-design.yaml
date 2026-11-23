@@ -1,0 +1,53 @@
+# experiment-design.yaml — the machine-readable spine of your Experimental Design Document.
+# Fill every field. An empty field is a hole another researcher will fall through.
+# Keep this in your repo at configs/experiment-design.yaml and version it with Git.
+
+study:
+  title: "Does RAG beat a fine-tuned baseline on closed-domain SQL generation?"
+  domain: "databases"               # your chosen CS domain, all semester
+  applied_ai_method: "RAG vs LoRA"  # the method you are testing in that domain
+  research_question: "RQ1: Does retrieval-augmented generation produce more
+    executable SQL than a LoRA-tuned model on the Spider dev split?"
+  hypothesis: "H1: RAG raises execution accuracy over the LoRA baseline by >= 3
+    points absolute (alpha = 0.05)."
+  null_hypothesis: "H0: RAG and LoRA execution accuracy do not differ."
+
+baselines:                          # you need at least a naive AND a strong baseline
+  - name: "zero-shot prompt"        # naive floor: no retrieval, no tuning
+    description: "Frozen base model, no examples."
+  - name: "LoRA-tuned (strong)"     # the number a reviewer will actually compare you to
+    description: "Same base, QLoRA adapters on the train split."
+
+conditions:                         # your method(s) under test
+  - name: "RAG (top-k=5)"
+    description: "Same base model + retriever over the schema/example store."
+
+ablations:                          # remove ONE thing per ablation to show what carries the effect
+  - "RAG with k=1 (does k matter?)"
+  - "RAG with retriever off, examples random (is it retrieval or just more tokens?)"
+
+data:
+  dataset: "Spider 1.0 (Yu et al., 2018)"
+  version_or_doi: "PIN THIS — commit hash / Zenodo DOI / dataset card URL"
+  splits:
+    method: "predefined train/dev/test (do NOT touch test until the full run)"
+    leakage_guard: "Fit any preprocessing on train ONLY, then transform dev/test."
+
+metrics:
+  primary: "execution accuracy (does the predicted SQL return the gold result set?)"
+  secondary: ["exact-match accuracy", "median latency per query (ms)"]
+  direction: "higher is better for accuracy; lower is better for latency"
+
+protocol:
+  seeds: [0, 1, 2, 3, 4]            # >= 5; report mean +/- std, never a single run
+  runs_per_condition: 5
+  significance_test: "deep-significance ASO over the 5-seed score vectors (tau=0.2)"
+  hardware: "1x A100 40GB (record actual)"
+  budget_estimate_gpu_hours: 12
+
+reproducibility:
+  code_repo: "https://github.com/<you>/<project>"
+  commit_pinned: true
+  env_capture: "conda env export + pip freeze; Dockerfile for CUDA/gcc"
+  determinism: "seed torch/numpy/random; torch.use_deterministic_algorithms(True)"
+  artifact_target: "Zenodo DOI at submission (auto-links a Software Heritage SWHID)"

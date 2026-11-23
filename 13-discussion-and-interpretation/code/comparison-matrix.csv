@@ -1,0 +1,5 @@
+paper,year,method,dataset_or_benchmark,headline_metric,reported_result,n_seeds_or_runs,stated_limitation,notes
+Smith et al.,2024,Prompted GPT-4 (zero-shot),SWE-bench Verified (500),resolve rate,38.2%,1,single run; no error bars,baseline you compare against
+Lee & Park,2025,RAG + cross-encoder reranker,c-CRAB,review-accuracy,0.71,1,one seed; English only,closest prior method
+Garcia et al.,2025,Fine-tuned 7B (full FT),internal corpus,resolve rate,40.5%,3,private dataset; not reproducible,strongest reported number
+YOUR WORK (replace),2026,RAG + LoRA adapter,SWE-bench Verified (500),resolve rate,41.0% (CI 0.7-4.9 vs Smith),5,single domain; no reranker ablation,add your real row here

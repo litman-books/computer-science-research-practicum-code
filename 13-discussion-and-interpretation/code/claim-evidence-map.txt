@@ -1,0 +1,27 @@
+# Claim–Evidence Map (hand version of the widget)
+
+Break your draft Discussion into **atomic claims** — one assertion per row. For each, name the
+*specific* evidence in your paper that licenses it (a table cell, a figure, a test — not "the
+experiments"). Then assign exactly one verdict.
+
+**Verdicts**
+- **Supported** — a result in your paper directly licenses this exact claim.
+- **Over-reach** — the result points this way but the claim says more than the result earns
+  (wrong scope, missing condition, causal language over correlational evidence). → *Narrow it.*
+- **Unsupported** — no result in the paper backs this claim at all. → *Measure it (move to Results)
+  or delete it.* No Unsupported claim may survive to submission.
+
+| # | Claim sentence (verbatim from your draft) | Specific evidence (table / fig / test) | Verdict | Fix (narrowed sentence, or "delete", or "measure") |
+|---|---|---|---|---|
+| 1 | Our adapter improves resolve rate over the prompted baseline. | Table 2: 41.0% vs 38.2%, CI [0.7, 4.9] | Supported | — |
+| 2 | Our adapter improves code review broadly. | only SWE-bench Verified tested | Over-reach | "...improves resolve rate on SWE-bench Verified." |
+| 3 | Retrieval is the dominant cost in our pipeline. | (none — no latency breakdown) | Unsupported | measure latency → Results, or delete |
+| 4 | | | | |
+| 5 | | | | |
+
+## Tally
+- Supported: ___
+- Over-reach (all narrowed?): ___
+- Unsupported (all resolved to measure/delete?): ___
+
+A reviewer runs this exact pass on your paper. The only question is whether you run it first.

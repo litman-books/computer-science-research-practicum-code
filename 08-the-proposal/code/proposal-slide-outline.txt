@@ -1,0 +1,31 @@
+# Proposal Talk — 12-slide skeleton (10–15 min)
+
+The discipline: **one idea per slide, ~1 minute per slide.** Twelve slides is the ceiling,
+not the target. If a slide has more than ~25 words or two ideas, split it or cut it.
+
+| # | Slide | The one job | Time |
+|---|---|---|---|
+| 1 | Title | RQ in one sentence + your name + domain | 0:30 |
+| 2 | The hook | The concrete problem, with one number | 1:00 |
+| 3 | Why it matters | Who is hurt by the gap; the stakes | 1:00 |
+| 4 | Prior work (the matrix) | The comparison matrix; point at the empty cell | 1:30 |
+| 5 | The gap | One sentence: what no one has tested | 1:00 |
+| 6 | Research question | The falsifiable RQ, restated, bold | 0:30 |
+| 7 | Hypothesis | H1 + the null; what result would refute you | 1:00 |
+| 8 | Method | Diagram: data → model/baseline → metric | 1:30 |
+| 9 | Baselines & ablations | What you compare against and why | 1:00 |
+| 10 | Validity & integrity | Top 2 threats + mitigations; AI-disclosure plan | 1:00 |
+| 11 | Timeline | Weeks 9–16 as a Gantt (8-week online section: the remaining modules); the pilot in Week 10 | 1:00 |
+| 12 | Expected contribution | What the field gains if H1 holds — and if it fails | 1:00 |
+
+## Slide-design rules
+- No paragraphs. Bullets are ≤ 7 words. The audience reads *or* listens — never both.
+- Every figure has a caption that stands alone (a reviewer who only sees the slide gets it).
+- Put the RQ on slide 1 AND slide 6. Repetition is a feature; people drift.
+- Back-pocket (appendix) slides: full bibliography, extra ablations, the threats table.
+  You don't show them — you reach for them when a question demands evidence.
+
+## The Q&A
+The talk is 10–12 min; questions are the rest. The hardest question is the gift — it tells
+you exactly what a reviewer will write. Answer the question asked. If you don't know, say
+"I don't know — here's how I'd find out." That sentence is a researcher's, not a fraud's.

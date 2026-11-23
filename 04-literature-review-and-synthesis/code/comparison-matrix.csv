@@ -1,0 +1,6 @@
+citekey,problem,method,dataset_benchmark,metric_and_result,baseline,limitation,theme,verified
+jimenez2024swebench,Can LLM agents fix real GitHub issues?,LLM agent + repo retrieval,SWE-bench Verified (500 human-validated tasks),% resolved (test suite passes),unassisted LLM,task completion only; no review-quality measure,agent_benchmarks,yes
+ccrab2026,Evaluate code-REVIEW agents (not just fixes),code-review-agent benchmark,c-CRAB (arXiv 2603.23448),review-comment quality score,prior review-agent,new; limited language/repo coverage,agent_benchmarks,yes
+EXAMPLE_keystone3,<your problem>,<your method>,<your dataset>,<metric + number>,<baseline>,<what it does NOT show>,human_acceptance,no
+EXAMPLE_keystone4,<your problem>,<your method>,<your dataset>,<metric + number>,<baseline>,single-repo; no transfer test,retrieval_strategy,no
+EXAMPLE_keystone5,<your problem>,<your method>,<your dataset>,<metric + number>,MISSING,no human-preference study,human_acceptance,no

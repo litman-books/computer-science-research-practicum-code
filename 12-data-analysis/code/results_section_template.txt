@@ -1,0 +1,54 @@
+# Results — section skeleton
+
+Drop this into your `acmart`/`IEEEtran` draft and replace the brackets. Rule:
+**lead with the effect, carry the interval, let the p-value bring up the rear.**
+No interpretation here — that is the Discussion (Chapter 13). Results = what you
+measured, how big, how sure, what test. Nothing more.
+
+---
+
+## Results
+
+### Setup recap (one short paragraph)
+We evaluate [method] against [baseline(s)] on [dataset(s)/benchmark], measuring
+[primary metric]. Each configuration is run over [N] random seeds; we report
+[mean ± 95% CI]. All numbers regenerate from the released notebook on pinned
+versions (SciPy [x], statsmodels [x], deep-significance [x]).
+
+### Primary result — the three-number sentence
+> [Method] improves [metric] by **[Δ] points** (95% CI **[lo, hi]**;
+> Cohen's *d* = **[d]**; [permutation/ASO] *p* = **[p]**) over [baseline].
+
+(If the effect is small, say so plainly: "the difference, though significant,
+is small (*d* = [d]) and unlikely to matter in practice.")
+
+### Multi-seed comparison (if applicable)
+Across [N ≥ 5] seeds, [method] stochastically dominates [baseline]
+(ASO τ-bound = **[min_eps]** < 0.2). The seed-to-seed spread is [σ], so a
+single-run comparison would have been [larger/smaller] than this margin
+(cf. Bouthillier et al., 2021).
+
+### All comparisons + correction
+We ran **[K]** comparisons in total ([metrics] × [datasets] × [subgroups] ×
+[ablations]). After [Holm (FWER) / Benjamini–Hochberg (FDR)] correction,
+**[k]** remain significant. See Table [n]; results that did not survive
+correction are shown anyway.
+
+| Comparison | Δ | 95% CI | d | p | p (Holm) | p (BH) | survives |
+|---|---|---|---|---|---|---|---|
+| [primary] |  |  |  |  |  |  | ✓ |
+| [...]     |  |  |  |  |  |  |   |
+
+### Figure
+[Figure 1 here — uncertainty shown (CI/error bars/raw points), defensible
+axis, self-contained caption. See code/plot_with_ci.py.]
+
+### Error analysis (Medium+)
+Stratifying [metric] by [slice: input length / class / domain] reveals
+[systematic failure]. [If an LLM was an instrument: its errors break toward
+[direction]; we read [m] failure cases.]
+
+### Confirmatory vs. exploratory
+Confirmatory (preregistered): [list]. Exploratory (hypothesis-generating,
+post-hoc, labeled as such): [list]. We do not present exploratory findings as
+predictions.

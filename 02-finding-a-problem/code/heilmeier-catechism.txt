@@ -1,0 +1,58 @@
+# The Heilmeier Catechism — Worksheet
+
+George Heilmeier's questions for any research program. The sharpest "so what?"
+filter ever written. Answer for each top candidate question. Be honest on #2 and #4 —
+those are where weak questions die.
+
+> Rule: answer #1 with NO jargon. If you can't, your question is foggy.
+> Answer #2 with a CITATION. If you can't, your gap is `unconfirmed`.
+
+---
+
+## Question under test
+
+> <full research question>
+
+**Domain:** <one domain>
+
+---
+
+### 1. What are you trying to do?
+Articulate your objectives using absolutely no jargon. (Plain enough for a smart
+person outside your subfield.)
+
+> ...
+
+### 2. How is it done today, and what are the limits of current practice?
+This IS your gap, restated. Cite the current practice and cite (or flag) its limit.
+
+> Today: <cite>. Limit: <cite, or mark `unconfirmed`>.
+
+### 3. What is new in your approach, and why do you think it will succeed?
+> New: ... Why it may work: ...
+
+### 4. Who cares? If you succeed, what difference does it make?
+If you cannot answer this, KILL the question.
+
+> ...
+
+### 5. What are the risks? How much will it cost? How long will it take?
+Be honest about your real compute, data access, and the weeks left this semester.
+
+> Risks: ... Cost (compute/data): ... Time: ...
+
+### 6. What are the mid-term and final exams to check for success?
+The measurable checkpoints — what number, on what benchmark, beats what baseline.
+
+> Mid-term check: ... Final check: ...
+
+---
+
+## Verdict
+
+- [ ] Answered #1 with no jargon
+- [ ] Answered #2 with a citation (gap is `confirmed`) — or flagged `unconfirmed`
+- [ ] Answered #4 convincingly (someone cares)
+- [ ] #5 is feasible with my actual resources
+
+If any box is unchecked, the question is not ready. Sharpen or kill it.

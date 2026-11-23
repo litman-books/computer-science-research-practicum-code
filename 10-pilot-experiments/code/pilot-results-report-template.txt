@@ -1,0 +1,46 @@
+# Pilot Results Report — <your project title>
+
+**Author:** <name>  ·  **Domain:** <SE / security / networking / DB / HPC / ...>
+**Date:** <YYYY-MM-DD>  ·  **Commit:** <git short hash>  ·  **Pilot scale:** <e.g. 10% of data, 3 seeds>
+
+---
+
+## 1. What I ran
+One paragraph. The method, the trivial baseline it must beat, the dataset/benchmark,
+the metric and its direction (higher-is-better or lower-is-better), the split, the
+number of seeds, and the compute used. A reader should be able to picture the run.
+
+## 2. The small numbers
+| Condition | Metric (mean ± spread over N seeds) | Trivial baseline | Beats baseline? |
+|-----------|-------------------------------------|------------------|-----------------|
+| My method | | | |
+| Strong baseline (from lit) | | | |
+
+> These are PILOT numbers. They are not a result. They tell me whether the
+> pipeline is sound enough to spend the full compute budget.
+
+## 3. Sanity checks (from the Pilot Sanity Checker)
+- [ ] Metric is inside its theoretical range
+- [ ] Method beats the trivial / majority baseline
+- [ ] No sample leaks across train/val/test
+- [ ] Seed-to-seed spread is sane (report it)
+- [ ] Loss/objective actually moved (not flat, not NaN) (if you train or fine-tune anything)
+
+## 4. Red flags found (and what they meant)
+List every surprise. "Accuracy = 0.99 on the pilot" is a flag, not a victory —
+usually leakage. Write what you suspected and what you confirmed.
+
+## 5. Compute extrapolation
+Pilot used <X> GPU-hours / API calls on <Y>% of the data. Full run estimate:
+<linear or worse-than-linear> ≈ <Z>. Is that within budget? If not, what scales down?
+
+## 6. What I will fix before the full run
+A numbered, concrete list. Each item is something a reviewer would otherwise catch.
+
+## 7. Go / no-go decision
+- [ ] **GO** — pipeline validated, budget confirmed, proceed to Chapter 11.
+- [ ] **NO-GO** — fix the listed items and re-pilot.
+
+---
+> **Integrity note.** Every number above came from a run that actually happened,
+> at the commit recorded. I have not dropped a seed because I disliked it. (Ex. 20:16, ESV)

@@ -1,0 +1,24 @@
+# Threats-to-Validity Table — Cook & Campbell (1979)
+
+Four categories. One or two **concrete, design-specific** threats per row — never a generic "the sample might be biased." Each threat gets a concrete mitigation. (Cook & Campbell 1979, *Quasi-Experimentation*; adapted for software engineering by Wohlin et al., *Experimentation in Software Engineering*.)
+
+| Category | The question it asks | Threat (specific to YOUR design) | Mitigation |
+|---|---|---|---|
+| **Statistical conclusion** | Are the inference and numbers sound? | _(e.g. single seed; no significance test; p-hacked comparison)_ | _(e.g. >=5 seeds; pre-stated test + effect size; touch test split once)_ |
+| **Internal** | Did the IV actually cause the change, or something else? | _(e.g. data leakage from scaling before split; benchmark contamination; prompt tuned on test set)_ | _(e.g. fit transforms inside the split; contamination-resistant benchmark; tune on val only)_ |
+| **Construct** | Does the metric measure what it claims? | _(e.g. recall on gold labels misses subtle bugs; "MMLU = reasoning or memorization?"; LLM judges fluency not correctness)_ | _(e.g. report secondary DV; check against ground truth; name construct/proxy gap; human spot-check)_ |
+| **External** | Does the result generalize beyond this setup? | _(e.g. works on c-CRAB but not your target codebase; one model family; one language)_ | _(e.g. state the scope honestly; add a second dataset/model if feasible; declare the tradeoff)_ |
+
+## Filling rules
+
+1. Every threat must be something a reviewer could actually point at in YOUR experiment.
+2. Internal vs. external is a tradeoff, not a checklist — tight control buys internal validity and spends external. State the choice (§6.6).
+3. Construct validity is usually the applied-AI weak point. Spend the most thought here.
+4. The threats you name this week are the controls you build next week (Chapter 7). This is design, not paperwork.
+
+## Sanity check before submit
+
+- [ ] At least one concrete threat in all four categories.
+- [ ] Each threat names a mechanism, not a feeling.
+- [ ] Each mitigation is an action you will take, not a reassurance.
+- [ ] You named the category your design is weakest in (and why).

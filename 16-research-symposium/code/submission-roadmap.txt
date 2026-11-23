@@ -1,0 +1,61 @@
+# Submission Roadmap — draft -> camera-ready -> submission
+
+A concrete map from the practicum draft you finished in Week 14-15 to a real
+submission. Fill in real dates from your chosen venue's CFP (see
+`venue-fit-sheet.md`). Anchor every "as of" claim to a date; verify policies
+live before you rely on them.
+
+## Phase 0 — Honest gap assessment (do this first)
+
+What separates your practicum draft from a submittable paper? Be specific.
+
+- [ ] Result strength: is the headline claim backed by multi-seed runs + effect
+      size + CI (not a single run)? (Bouthillier et al. 2021)
+- [ ] Baselines: is there a fair, current baseline the reviewer expects?
+- [ ] Related work: is the comparison matrix current to the venue's last cycle?
+- [ ] Reproducibility: env pinned, seeds set, data documented, code archivable?
+- [ ] Page/format fit: does it fit the venue's page limit in the right template?
+- [ ] Scope honesty: is this a workshop/WIP paper, or are you overreaching?
+
+## Phase 1 — Pick the venue and read the CFP (Week 16)
+
+- [ ] Complete `venue-fit-sheet.md`; pick ONE target.
+- [ ] Read the full Call for Papers. Copy the scope sentence, page limit,
+      template, deadline, anonymity rule, and AI-disclosure location into the
+      roadmap.
+- [ ] Confirm archival vs non-archival track.
+
+## Phase 2 — Format and anonymize
+
+- [ ] Move the draft into the venue's template (acmart sigconf, or
+      `\documentclass[conference]{IEEEtran}`). Both are on Overleaf.
+- [ ] If double-anonymous: scrub names/affiliations, anonymize self-citations,
+      strip grant IDs and identifying links from supplementary material.
+- [ ] Fit the page limit in the venue's COUNT format (acmart counts in the
+      1-column manuscript format; check the CFP).
+
+## Phase 3 — Integrity + disclosure boxes (non-negotiable)
+
+- [ ] Every citation verified against a real index (dblp / Semantic Scholar /
+      publisher). NO hallucinated references. (Walters & Wilder 2023.)
+- [ ] No fabricated, falsified, or cherry-picked data (FFP triad).
+- [ ] Statistics honest: effect size + CI, correction for multiple comparisons.
+- [ ] AI use disclosed per the venue's policy and in the venue's location
+      (verify on the CFP — ACM/IEEE -> Acknowledgements; NeurIPS -> experimental
+      setup if non-standard; ICLR -> paper text AND submission form).
+- [ ] No hidden/invisible prompt text anywhere (treated as misconduct).
+
+## Phase 4 — Reproducibility artifact
+
+- [ ] Tag a release in Git.
+- [ ] Deposit to Zenodo for a DOI (auto-links a Software Heritage SWHID since
+      the Oct 21, 2024 integration).
+- [ ] If the venue offers ACM Artifact Review & Badging, target Artifacts
+      Available at minimum.
+
+## Phase 5 — Submit and continue
+
+- [ ] Submit before the deadline (build in a 48-hour buffer).
+- [ ] Continuation plan: if accepted, present; if rejected, read reviews without
+      defensiveness (Ch15), revise, resubmit one tier down or to the next cycle.
+- [ ] Map the workshop -> conference -> journal pipeline for the next 12 months.

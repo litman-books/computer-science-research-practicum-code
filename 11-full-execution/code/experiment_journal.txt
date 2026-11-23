@@ -1,0 +1,57 @@
+# Experiment Journal — <your project>
+
+> Write in the present tense, in the moment, and NEVER edit an entry to look better
+> after the fact. The numbers live in `run_log.csv`; this is the narrative the numbers
+> can't capture. Append-only. (Ch11 §11.4)
+
+---
+
+## Day 1 — <date>
+
+**Launch plan.** Full matrix = conditions {method, baseline, ablation_no_attention} ×
+seeds {1..8} × split {test}. Budget computed from pilot: ~9 min/cell × 3 conditions ×
+8 seeds ≈ 3.6 GPU-hours. Checkpointing on so a Colab timeout costs minutes, not the run.
+
+**Environment.** Frozen via `conda env export > environment.yml`; commit `a1b3c9d` (clean).
+
+**09:15** — Launched method/seed 1. macro_f1 = 0.812. Matches pilot ballpark. Good.
+**11:30** — Method/seed 3 came back at 0.761 — ~5 points under the others and *under the
+baseline*. No crash, no error, same code/config/data as seeds 1–2. This is real variance,
+not a bug. KEEPING it. Flagged for Ch12. Resisting the urge to call it an outlier.
+**12:05** — Method/seed 4 OOM'd at epoch 7. Mechanical failure → excludable WITH this note.
+Reran at 14:10 with batch=16 → 0.799. Logged BOTH rows (the crash and the rerun).
+
+**Anomaly I don't yet understand:** validation loss for seed 3 plateaus early. Don't know
+why. Recording it now anyway. Will investigate in analysis, will report honestly even if
+I never explain it.
+
+---
+
+## Day 2 — <date>
+
+**08:45** — Baseline + ablation runs. Ablation (no attention) = 0.748, i.e. removing the
+component costs ~6 points — that's the evidence the component earns its place.
+**09:30** — LLM-as-instrument run (code-review agreement vs human labels).
+Model: `claude-opus-5-5` (Anthropic), decoding effort=medium, date logged, prompt verbatim
+(hash p_4471). Verified 30 model outputs against human labels by hand before trusting the
+aggregate — model fabrication rises with context length (arXiv:2603.08274), so outputs are
+NOT data until checked.
+
+**Exclusions ledger (the honest record):**
+| run_id | why excluded | evidence | rerun |
+|---|---|---|---|
+| 20261121T120500 | GPU OOM, epoch 7 | stack trace in logs/oom_s4.txt | 20261121T141000 |
+
+**Kept-despite-ugly ledger:**
+| run_id | result | why kept |
+|---|---|---|
+| 20261121T113000 | seed 3, 0.761 | real variance, no mechanism to exclude |
+
+---
+
+## End-of-week integrity check
+- [ ] Every row has commit + seed + config + dataset hash (no blanks).
+- [ ] No `dirty=true` rows in the final dataset.
+- [ ] Seed sequence has no silent gaps (every excluded seed is documented + rerun).
+- [ ] Every LLM call has version + date + prompt + decoding settings.
+- [ ] Dataset tagged in Git and ready to deposit to Zenodo for a DOI.

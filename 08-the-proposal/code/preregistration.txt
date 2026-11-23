@@ -1,0 +1,33 @@
+# Preregistration plan (OSF / AsPredicted template)
+
+A preregistration is a time-stamped, read-only declaration of your plan **before** you
+collect data. It is the single strongest defense against HARKing (Kerr 1998) and p-hacking
+(Simmons, Nelson & Simonsohn 2011): you cannot quietly turn an exploratory finding into a
+"predicted" one if the prediction is on the public record with a date. Lock your proposal's
+analysis plan here.
+
+Free, open registries (as of 2026): **OSF** (Center for Open Science — time-stamped,
+read-only) and **AsPredicted.org** (an 8-question form). COS also runs **Registered
+Reports**, where a venue grants in-principle acceptance on the plan, before results exist.
+
+## The plan (fill before any real data is touched)
+
+1. **Research question.** ___ (one falsifiable sentence)
+2. **Hypotheses.** H1: ___ Null H0: ___ What result would refute H1: ___
+3. **Independent variable(s).** ___ (what you manipulate)
+4. **Dependent variable(s) / metric.** ___ (exact metric + how computed)
+5. **Conditions / baselines.** ___ (e.g., RAG vs fine-tune vs prompt-only)
+6. **Sample / dataset.** ___ (source, size, splits — train/val/test fixed in advance)
+7. **Number of runs / seeds.** ___ (multi-seed: single-run "we won" is empty — Bouthillier
+   et al. 2021, MLSys)
+8. **Statistical test, chosen in advance.** ___ (e.g., paired permutation test; ASO for
+   multi-seed; report effect size + CI, not p alone — ASA 2019)
+9. **Multiple-comparison plan.** ___ (Holm / Benjamini–Hochberg if > 1 comparison)
+10. **Stopping rule.** ___ (you decide N now, not "until p < 0.05")
+11. **Exclusions.** ___ (what runs you will drop, and the rule, decided now)
+12. **AI-assistance disclosure.** ___ (which tools, which sections — per your target venue)
+
+> **Why this is here.** "You shall not bear false witness" (Exodus 20:16, ESV) is not only
+> about words. A buried failed run, a metric swapped after seeing the numbers, an analysis
+> chosen because it crossed 0.05 — each is a false witness to the data. Preregistration is
+> how you bind your future self to honesty before temptation arrives.

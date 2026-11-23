@@ -1,0 +1,35 @@
+# Raw-Results Reproducibility Checklist
+
+> Tick before you call the dataset "done." A stranger should be able to take your
+> dataset + repo and answer "what produced this number?" for EVERY row. (Ch11)
+
+## Per-row provenance (the four non-negotiables — §11.2)
+- [ ] **Commit hash** recorded, and the working tree was **clean** (no `dirty=true`).
+- [ ] **Seed** recorded and set everywhere (Python `random`, NumPy, framework).
+- [ ] **Config** recorded in full (a versioned config beats remembered flags).
+- [ ] **Dataset hash + split** recorded (so no one can wonder if the test set moved).
+
+## If an LLM was your instrument (§11.3)
+- [ ] Exact **model version string** + provider per call (not the family name).
+- [ ] **Date/time** of each call (closed endpoints drift).
+- [ ] **Verbatim prompt** (incl. system prompt) stored or hashed.
+- [ ] **Decoding settings** logged (reasoning effort, or an open-weight model's sampling config) — even when left at the default.
+- [ ] Model outputs **verified against ground truth** before entering the dataset.
+- [ ] AI method use noted for later **venue disclosure** (Appendix C).
+
+## Completeness & honesty (§11.4–11.5)
+- [ ] **All planned seeds** present; every missing seed is documented + rerun.
+- [ ] Every exclusion has a **mechanical reason + evidence** (crash/OOM/identified bug).
+- [ ] No run excluded merely for being **disappointing** — variance is data.
+- [ ] Log is **append-only**; reruns are new rows, originals not overwritten.
+- [ ] **Anomalies** recorded in the journal in the moment, even if unexplained.
+
+## Environment & archival (§11.6)
+- [ ] Environment pinned (`pip freeze` / `conda env export`; lock + Docker if used).
+- [ ] Release **tagged in Git**.
+- [ ] Dataset deposited to **Zenodo** → **DOI** (+ auto SWHID to Software Heritage).
+- [ ] README says, in one paragraph, how to rerun and regenerate the raw results.
+
+## The one-line gut check
+> "Could a stranger, with my repo and this dataset, reproduce any number I report —
+> and would they find the runs I'd have been tempted to hide?"

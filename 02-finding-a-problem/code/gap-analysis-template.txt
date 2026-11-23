@@ -1,0 +1,57 @@
+# Gap-Analysis Template (CARS) — Research Opportunity Report
+
+Fill one of these for each top candidate. The three moves are Swales' CARS model:
+establish the **territory**, carve the **niche** (the cited gap), then **occupy** it.
+Every claim gets a citation OR an honest `unconfirmed` tag — no exceptions.
+
+---
+
+## Candidate question
+
+> <Write the full, falsifiable, comparative question here.>
+
+**Domain:** <one domain from the menu>
+**Metric you would count:** <e.g., recall, p95 latency, F1, SSQ score>
+**Baseline you might lose to:** <name the obvious cheaper/standard comparison>
+
+---
+
+## Move 1 — Territory (what is known)
+
+State what the field already establishes, with citations. This is the "this matters
+and here's the state of the art" paragraph.
+
+- Known fact 1 (cite) — `confirmed` / `unconfirmed`
+- Known fact 2 (cite) — `confirmed` / `unconfirmed`
+
+## Move 2 — Niche (the cited absence)
+
+Name the *specific* gap as a cited limitation. Pick the gap shape and back it:
+unverified claim / narrow benchmark / contamination-prone eval / untested transfer /
+missing baseline-or-ablation.
+
+- Gap shape: <one of the five>
+- The cited absence: "<Authors, Year> evaluate only on <X> and explicitly leave <Y>
+  to future work (§N)." — `confirmed` / `unconfirmed`
+- If `unconfirmed`: what you will check in Chapter 3 to confirm or kill it:
+  <dblp / Semantic Scholar / OpenReview search plan>
+
+## Move 3 — Occupy (what you would do)
+
+One sentence: the experiment that fills the niche.
+
+> I will compare <method> against <baseline> on <benchmark>, measured by <metric>,
+> testing whether <falsifiable claim>.
+
+---
+
+## Honesty ledger
+
+| Claim | Citation | Status |
+|---|---|---|
+| <claim 1> | <Author Year, venue, DOI/arXiv> | confirmed / unconfirmed |
+| <claim 2> | | |
+
+> AI-use note: if any wording, idea, or citation here came from an AI assistant,
+> log it in `ai-use.md` (assistive vs. generative) and confirm every citation
+> exists in dblp before submission. The model is never the author; you are.

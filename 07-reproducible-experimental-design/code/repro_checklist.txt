@@ -1,0 +1,39 @@
+# Reproducibility Checklist (paste into your design doc and tick every box)
+
+A stranger with your repo and one afternoon should be able to rerun your study
+and get the same numbers (within seed variance). Each unchecked box is a place
+they can't. Modeled on the spirit of Pineau's ML Reproducibility Checklist and
+the NeurIPS Paper Checklist — but you own the answers, not a tool.
+
+## Design (the claim is testable)
+- [ ] Research question and a FALSIFIABLE hypothesis are stated.
+- [ ] At least one naive AND one strong baseline are named.
+- [ ] At least one ablation isolates the component you claim is responsible.
+- [ ] The primary metric is named, with its direction (higher/lower is better).
+
+## Data (no leakage, known provenance)
+- [ ] Dataset name + version/DOI/commit is pinned (not "the latest version").
+- [ ] Train / validation / test splits are defined and FIXED before any tuning.
+- [ ] Preprocessing is fit on TRAIN only, then applied to val/test (no leakage).
+- [ ] Test set is untouched until the final run (one look, no peeking).
+
+## Protocol (the numbers are not luck)
+- [ ] >= 5 seeds; report mean +/- std (single-run "we won" is statistically empty).
+- [ ] Hyperparameters and their search are recorded.
+- [ ] A planned significance test is named (ASO / permutation), not chosen after.
+- [ ] Compute budget (GPU-hours / hardware) is recorded.
+
+## Environment (it runs on a clean machine)
+- [ ] Dependencies pinned (pip freeze / conda env export; conda-lock if needed).
+- [ ] System libs containerized (Dockerfile) if CUDA/gcc/ffmpeg matter.
+- [ ] Random seeds set for torch/numpy/random; determinism flags on.
+- [ ] If an LLM is an instrument: model NAME + VERSION + DATE + decoding settings (reasoning effort, or sampling config) logged.
+
+## Disclosure & integrity (you own every claim)
+- [ ] Code repo URL + pinned commit in the doc.
+- [ ] README states the exact command(s) to reproduce each table/figure.
+- [ ] AI assistance disclosed per the target venue's policy (Appendix C).
+- [ ] No fabricated data, no dropped "bad" runs, no hallucinated citations.
+
+Score = boxes checked / boxes total. Below ~0.8 and your study is not yet
+reproducible — fix the holes before Week 9 builds the environment for real.

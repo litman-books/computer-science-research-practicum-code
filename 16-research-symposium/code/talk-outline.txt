@@ -1,0 +1,35 @@
+# 12-Minute Talk Outline — one slide per beat
+
+A conference talk is NOT your paper read aloud. It is the trailer. Target ~12
+minutes of speaking + 3 minutes of questions. Roughly one slide per minute.
+Write the talk to ONE claim the audience should remember.
+
+The one sentence they remember: _____________________________________________
+
+| # | Slide | Job | Seconds | Speaker note |
+|---|---|---|---|---|
+| 1 | Title + you | Who, what, where this fits | 30 | Name the domain + the AI angle in one breath |
+| 2 | The problem | Why anyone should care | 60 | A concrete pain, not an abstraction |
+| 3 | The gap | What prior work left undone | 60 | One sentence; cite the matrix's empty column |
+| 4 | The question | Your RQ, falsifiable | 45 | State it as something you could be wrong about |
+| 5 | The approach | What you did, at altitude | 90 | The idea, not every hyperparameter |
+| 6 | Setup | Baseline, data, metric, seeds | 60 | Enough that the result is credible |
+| 7 | Headline result | The ONE number/figure | 90 | Effect size + CI, not just a p-value |
+| 8 | A second result | Ablation or breakdown | 60 | Shows the result is not luck |
+| 9 | Threats / limits | What you would NOT claim | 60 | Honesty here buys you credibility |
+| 10 | Takeaway | The one sentence again | 45 | Repeat the remembered sentence |
+| 11 | Future / venue | Where this paper is going | 30 | Name your target venue |
+| 12 | Backup slides | (Not counted) | -- | Extra figures for Q&A only |
+
+## Demo discipline
+
+- Rehearse OUT LOUD, on a clock, at least twice. The first run always overruns.
+- A slide with more than ~20 words is a script, not a slide. Cut it.
+- Every figure must be readable from the back row: big fonts, labeled axes.
+- Anticipate the three hardest questions and put the answers in backup slides.
+
+## The integrity line in a talk
+
+If a number on a slide is not in the paper, do not show it. If a result is
+preliminary, say "preliminary." A talk is bearing witness to your data in front
+of a room. Do not let the slide claim more than the data supports.

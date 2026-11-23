@@ -1,0 +1,44 @@
+# Hypothesis Template — fill every blank, delete every hedge
+
+Climb the ladder (Chapter 6, §6.1). Do not start the experiment until you stand on the bottom row.
+
+| Rung | Yours |
+|---|---|
+| **Topic** | _(your area)_ |
+| **Question** | _(a specific unknown — must contain a comparison)_ |
+| **Hypothesis** | _(what beats what, by which metric, roughly how much)_ |
+| **Operationalized** | _(every term defined + split + number of seeds)_ |
+
+---
+
+## The claim, both sides
+
+Write H1 and H0 together. If you cannot write a clean H0, your H1 is not a hypothesis yet (§6.2).
+
+```
+H1 (your claim):  [METHOD] achieves [DIRECTION: higher/lower] [PRIMARY DV]
+                  than [BASELINE] on [DATASET / SPLIT], over [N >= 5] seeds.
+
+H0 (the null):    [METHOD] produces no difference in [PRIMARY DV]
+                  vs. [BASELINE] on [DATASET / SPLIT].
+
+Predicted direction:  __________   Predicted rough magnitude:  __________
+```
+
+## Hedge-word blocklist (delete on sight)
+
+These words remove a way for your claim to lose. The Hypothesis & Validity Builder flags them; so do reviewers.
+
+    can        may        might      could      sometimes
+    tends to   generally  often      under certain conditions
+    help with  improve    (without "than what, by what measure")
+
+## Falsifiability self-check
+
+- [ ] There is a concrete result that would make me say "H1 was wrong."
+- [ ] The claim names a comparison (A vs. B), not a lone capability.
+- [ ] The claim names a metric, not a vibe.
+- [ ] H0 is stated and is genuinely losable.
+- [ ] No hedge words survive.
+
+If any box is unchecked, you are still on a higher rung. Climb down.

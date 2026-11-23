@@ -1,0 +1,54 @@
+# Structural Analysis Template — one per paper
+
+Fill this out for each of the three recent conference papers you read this week.
+Cite the paper by its real, verified bibliographic record (you will check it in
+dblp or Semantic Scholar). Do not paraphrase from memory — quote the section
+headings as the paper actually wrote them.
+
+---
+
+## Paper N
+
+- **Full citation (verified in dblp/Semantic Scholar):**
+  > Authors. "Title." Venue, Year. DOI/arXiv id.
+- **Venue + year:**
+- **Research type** (pick one, justify in a line):
+  empirical · systems · theory · HCI/user-study · measurement
+- **Verified?** [ ] I confirmed this record exists in dblp or Semantic Scholar.
+
+### The five Cs (Pass 1)
+- **Category:** (measurement paper? new system? analysis of existing tech?)
+- **Context:** (what other work does it relate to; what foundations does it use?)
+- **Correctness:** (do the assumptions look valid?)
+- **Contributions:** (the main claim, in one sentence)
+- **Clarity:** (is it well written?)
+
+### Section map (Pass 1–2)
+List the paper's *actual* top-level section headings in order, and for each,
+write the one-line job it does:
+
+| # | Heading as printed | Job it does |
+|---|---|---|
+| 1 |  |  |
+| 2 |  |  |
+| … |  |  |
+
+### What makes it publishable? (the four pillars)
+Rate each 1–5 and justify in a sentence — back the rating with a specific line
+from the paper, not a vibe.
+
+| Pillar | Rating (1–5) | Evidence (cite the line/table/figure) |
+|---|---|---|
+| Novelty (is it new?) |  |  |
+| Rigor (is the method sound?) |  |  |
+| Reproducibility (could you rerun it?) |  |  |
+| Significance (does it matter?) |  |  |
+
+### The applied-AI thread
+- Where (if anywhere) does AI appear — as the *object* studied, the *method*
+  used, or a *tool* in their pipeline?
+- If it advances a CS domain, which domain and how?
+
+### The gap (Pass 3 — mine the Future Work)
+- One sentence the authors wrote that points at an open problem:
+- A practicum-sized question it suggests for *your* domain:

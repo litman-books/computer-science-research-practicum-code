@@ -1,0 +1,9 @@
+run_id,timestamp_utc,commit,dirty,seed,condition,config_json,dataset_sha256_16,split,model_version,model_provider,decoding,metric_name,metric_value,status,exclusion_reason,notes
+20261121T091500,2026-11-21T09:15:00,a1b3c9d,false,1,method,"{""lr"":0.001,""epochs"":20}",4f2a9c1b77e0d3a8,test,n/a,n/a,n/a,macro_f1,0.812,ok,,clean baseline-matched run
+20261121T101200,2026-11-21T10:12:00,a1b3c9d,false,2,method,"{""lr"":0.001,""epochs"":20}",4f2a9c1b77e0d3a8,test,n/a,n/a,n/a,macro_f1,0.804,ok,,
+20261121T113000,2026-11-21T11:30:00,a1b3c9d,false,3,method,"{""lr"":0.001,""epochs"":20}",4f2a9c1b77e0d3a8,test,n/a,n/a,n/a,macro_f1,0.761,ok,,KEPT: underperforms baseline; real variance not a bug; flagged for Ch12 analysis
+20261121T120500,2026-11-21T12:05:00,a1b3c9d,false,4,method,"{""lr"":0.001,""epochs"":20}",4f2a9c1b77e0d3a8,test,n/a,n/a,n/a,macro_f1,0.000,excluded,GPU OOM at epoch 7 -- process crashed; mechanical failure,rerun queued as 20261121T141000
+20261121T141000,2026-11-21T14:10:00,a1b3c9d,false,4,method,"{""lr"":0.001,""epochs"":20,""batch"":16}",4f2a9c1b77e0d3a8,test,n/a,n/a,n/a,macro_f1,0.799,ok,,rerun of seed 4 with smaller batch after OOM
+20261121T091500,2026-11-21T09:15:00,a1b3c9d,false,1,baseline,"{""model"":""logreg""}",4f2a9c1b77e0d3a8,test,n/a,n/a,n/a,macro_f1,0.770,ok,,
+20261122T084500,2026-11-22T08:45:00,a1b3c9d,false,1,ablation_no_attention,"{""lr"":0.001,""epochs"":20}",4f2a9c1b77e0d3a8,test,n/a,n/a,n/a,macro_f1,0.748,ok,,ablation: removes attention head to price the component
+20261122T093000,2026-11-22T09:30:00,e7c4f02,false,1,llm_judge,"{""task"":""codereview""}",9b1d6e2af0c45578,test,claude-opus-5-5,anthropic,effort=medium,agreement_rate,0.683,ok,,LLM-as-instrument: prompt hash p_4471; outputs verified vs human labels

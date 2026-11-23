@@ -1,0 +1,38 @@
+# Venue-Fit Sheet — choose ONE target before you write the roadmap
+
+Fill one row per candidate venue. Pick the venue you can actually hit, then
+delete the rest. A realistic workshop deadline beats an aspirational
+top-conference deadline you will miss.
+
+| Field | Candidate A | Candidate B | Candidate C |
+|---|---|---|---|
+| Venue name (workshop / SRW / conference / journal) | | | |
+| Type (workshop / Student Research Workshop / full conf / journal) | | | |
+| Co-located with (e.g. ACL 2027, a NeurIPS workshop) | | | |
+| Topic fit (does my RQ match the CFP scope? quote the line) | | | |
+| Page limit (count format — acmart 1-col vs sigconf 2-col) | | | |
+| Template (acmart sigconf / IEEEtran conference / venue style) | | | |
+| Anonymous review? (double-anonymous = scrub identity) | | | |
+| Archival or non-archival track? | | | |
+| CORE rank (A*/A/B/C — verify on core.edu.au, ICORE 2026) | | | |
+| Scholar h5-index (verify on Scholar Metrics) | | | |
+| Illustrative acceptance rate (cite source + year, do not invent) | | | |
+| Submission deadline (paste the date from the CFP) | | | |
+| Notification / camera-ready dates | | | |
+| AI-disclosure policy (where it goes; verify on the CFP) | | | |
+| Reproducibility expectation (checklist? artifact badging?) | | | |
+
+## Decision rule (the practicum default)
+
+A 16-week practicum draft is **work-in-progress**. The honest first target is a
+**workshop or Student Research Workshop short/WIP paper (~2-4 pages)** — an
+on-ramp, not the main conference. Workshops have higher acceptance rates and
+exist precisely for student and early-stage work. Pipeline: workshop -> full
+conference -> extended journal version.
+
+Note (as of 2026): a workshop-reviewed survey/position paper does NOT clear the
+arXiv-CS bar. arXiv (Oct 31, 2025) requires CS review/survey/position papers to
+already be peer-review-accepted at a journal or conference, with a DOI; workshop
+review is explicitly insufficient. A separate Jan 21, 2026 endorsement change
+means an institutional email alone no longer qualifies a new submitter. Plan the
+preprint step accordingly; verify both rules live before you rely on them.

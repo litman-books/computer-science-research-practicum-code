@@ -1,0 +1,8 @@
+claim_id,claim,condition,role,isolates,primary_metric,beats_what,planned_test
+C1,"RAG improves SQL executability",zero-shot prompt,naive baseline,nothing (floor),execution accuracy,n/a,n/a
+C1,"RAG improves SQL executability",LoRA-tuned,strong baseline,"tuning, no retrieval",execution accuracy,zero-shot,n/a
+C1,"RAG improves SQL executability",RAG top-k=5,method,"retrieval added",execution accuracy,LoRA-tuned,ASO over 5 seeds
+C1a,"Effect is from retrieval, not extra tokens",RAG random-context k=5,ablation,"retrieval quality (random vs real)",execution accuracy,RAG top-k=5,ASO over 5 seeds
+C1b,"Effect needs more than one neighbor",RAG top-k=1,ablation,"value of k",execution accuracy,RAG top-k=5,ASO over 5 seeds
+C2,"RAG does not blow the latency budget",LoRA-tuned,strong baseline,nothing,median latency ms,n/a,n/a
+C2,"RAG does not blow the latency budget",RAG top-k=5,method,"retrieval cost",median latency ms,LoRA-tuned,permutation test

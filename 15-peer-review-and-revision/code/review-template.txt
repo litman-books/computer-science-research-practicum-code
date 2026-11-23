@@ -1,0 +1,52 @@
+# Peer-Review Report Template
+
+Use this for every formal review. It mirrors what NeurIPS/ICLR reviewers fill in on
+OpenReview. Fill EVERY field. A blank field is a review you did not actually do.
+
+---
+
+## 0. Metadata
+- Paper title (as anonymized):
+- Reviewer (you), domain:
+- Primary AI method under study:
+- Claimed contribution (in your own words, one sentence):
+
+## 1. Summary (3–5 sentences, NEUTRAL)
+Restate the paper's problem, method, and main result as the AUTHORS would agree with.
+If you cannot summarize it fairly, you have not understood it well enough to judge it.
+
+## 2. Strengths (be specific — cite section/figure)
+- S1:
+- S2:
+- S3:
+
+## 3. Weaknesses — tagged by severity
+Tag each: [MAJOR] threatens a central claim · [MINOR] fixable, doesn't sink it ·
+[CLARIFY] you genuinely could not tell.
+- W1 [   ]:
+- W2 [   ]:
+- W3 [   ]:
+
+## 4. Questions for the authors (things a rebuttal could resolve)
+- Q1:
+- Q2:
+
+## 5. Axis scores (1 = poor, 5 = excellent) — justify each in one line
+| Axis | Score | One-line justification |
+|---|---|---|
+| Novelty / gap addressed |   |   |
+| Methodology & reproducibility |   |   |
+| Honesty of results (stats, baselines, no overclaim) |   |   |
+| Writing & clarity |   |   |
+| Significance to the domain |   |   |
+
+## 6. Integrity flags (check the box only if you SAW it)
+- [ ] A cited reference I could not find in dblp / Semantic Scholar
+- [ ] A claim with no supporting result (overclaim)
+- [ ] Single-run / single-seed "we beat the baseline"
+- [ ] p-value reported with no effect size or CI
+- [ ] Missing AI-use disclosure where generative use is evident
+
+## 7. Recommendation
+Accept / Weak Accept / Borderline / Weak Reject / Reject — and the ONE change that
+would most move your score.

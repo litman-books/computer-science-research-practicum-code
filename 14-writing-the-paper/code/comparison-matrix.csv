@@ -1,0 +1,7 @@
+paper,problem,method,dataset_benchmark,baselines,metric,claimed_result,limitation
+"Smith 2024","LLM code review reliability","prompt-only agent","internal 80-PR set","human reviewer","defect recall","68% recall","no logic-error breakdown; small set"
+"Jones 2025","LLM code review reliability","RAG over codebase","SWE-bench Lite","prompt-only","defect recall, FP rate","74% recall","retrieval recall unreported"
+"Lee 2026","automated review at scale","agentic (LangGraph)","internal CI logs","static analyzer","throughput","3x throughput","no quality measurement vs humans"
+"<your seed paper>","","","","","","",""
+"<your seed paper>","","","","","","",""
+"YOURS (this paper)","LLM code review on REAL defects","<your method>","SWE-bench Verified (500)","human + prompt-only","recall by error TYPE","<fill after results>","<your honest limitation>"

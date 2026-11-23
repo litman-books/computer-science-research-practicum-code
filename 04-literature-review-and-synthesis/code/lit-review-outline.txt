@@ -1,0 +1,37 @@
+# Literature Review — Annotated Outline (thematic, not paper-by-paper)
+
+> Structure follows Swales' CARS model: establish territory -> establish niche -> occupy niche.
+> One subsection per THEME (a column you read DOWN the matrix), not one per paper.
+
+## 0. Opening frame  (~1 paragraph)   [CARS Move 1: territory]
+- The problem space and why it matters now.
+- Orient a reader who does NOT know your domain.
+
+## 1. Theme A — <e.g., Benchmarks for code-review agents>   (3-6 sentences, several cites)
+- Topic sentence = an IDEA about the field, NOT an author's name.
+- Synthesize 3+ papers; compare their methods/datasets/metrics.
+- End by naming what this theme leaves OPEN.
+
+## 2. Theme B — <e.g., Human-acceptance metrics>
+- (same shape)
+
+## 3. Theme C — <e.g., Retrieval strategies>
+- (same shape)
+
+## 4. The gap  (1-2 paragraphs)   [CARS Move 2: niche]
+- Pull the threads together: the unaddressed column / empty cell.
+- Back EVERY gap claim with a cited absence (matrix cell + empty searches).
+- "Nobody has done X" must be footnotable, not a hunch.
+
+## 5. Your foothold  (1 sentence)   [CARS Move 3: occupy]
+- One sentence: how your planned work occupies that niche.
+- Not the experiment yet (that's Ch.8) — just the target.
+
+---
+## Self-check before submitting
+- [ ] No topic sentence opens with an author's name
+- [ ] Each theme cites SEVERAL papers, compared
+- [ ] Gap backed by cited absences
+- [ ] A stranger could finish the review knowing exactly what you'll do
+- [ ] NOTE: this review is a SECTION of your paper, not an arXiv survey
+      (arXiv-CS, Oct 31 2025: surveys need prior peer-review acceptance + DOI)

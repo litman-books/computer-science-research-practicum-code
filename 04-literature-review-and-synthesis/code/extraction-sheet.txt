@@ -1,0 +1,49 @@
+# Extraction Sheet — one per paper (Pass 2)
+
+> Copy this file once per paper: `cp extraction-sheet.md notes/extract-<citekey>.md`
+> Fill each field in the PAPER'S OWN TERMS first, then in YOUR words.
+> Verify every fact against the PDF — auto-extraction is a first draft, not a fact.
+
+**Cite key:** `<authorYEARkeyword>` (must match the key in your Zotero BibTeX export)
+**Full citation:** <authors, title, venue, year, DOI/arXiv id>
+**Read passes done:** [ ] Pass 1  [ ] Pass 2  [ ] Pass 3 (keystone)
+
+---
+
+## 1. Problem
+*What question does this paper actually answer? (Often narrower than the title.)*
+
+
+
+## 2. Method / approach
+*What did they build or do? Name the architecture / algorithm / technique.*
+
+
+
+## 3. Dataset / benchmark
+*What did they evaluate ON? A result is meaningless without this.*
+
+
+
+## 4. Metric & result
+*What number, on what MEASURE, against what BASELINE?*
+- Metric (define it): 
+- Result: 
+- Baseline compared against:    <-- if you can't name this, the result isn't comparable
+
+## 5. Limitation / threat
+*What does the paper NOT show? Read "Limitations" and "Future Work" like a prosecutor.*
+*THIS is where your gap is usually born.*
+
+
+
+---
+
+## Verification log (integrity — required)
+- [ ] Citation confirmed in dblp / Semantic Scholar / publisher
+- [ ] Metadata (authors/year/venue) correct
+- [ ] Any AI-extracted cell hand-checked against the PDF
+- AI tools used (if any), for which fields: 
+
+## My one-line takeaway
+*How this paper relates to MY gap (theme it belongs to; does it corroborate or contrast?):*

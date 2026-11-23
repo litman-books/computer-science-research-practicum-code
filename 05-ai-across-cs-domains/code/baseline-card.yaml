@@ -1,0 +1,42 @@
+# Baseline Card  —  Chapter 5, Computer Science Research Practicum
+# Pin down EXACTLY what your proposed method has to beat. If you cannot fill `baseline`,
+# you do not yet have a research design. Keep the baseline simple and, where possible, non-AI.
+
+claim: >-
+  <Method X> beats <baseline Y> on <metric Z> by <margin M> under <conditions>.
+
+method:
+  name: ""              # the AI method you propose (e.g. "QLoRA fine-tune of an open-weight 8B model")
+  ladder_rung: ""       # prompt | rag | finetune-lora | finetune-qlora | distill | agent | rl | cv | multimodal
+  why_not_lower: ""     # one sentence: why the cheaper rung below this does NOT suffice
+
+baseline:
+  name: ""              # the thing to beat — PREFER a simple/non-AI baseline
+  type: ""              # non-ai-heuristic | rule-filter | base-model-no-retrieval | published-number | prior-sota
+  is_simple_and_honest: true   # a reviewer's first question is "does it beat the obvious thing?"
+  published_number_ref: ""     # if type=published-number: the verified citation (dblp/Semantic Scholar)
+
+metric:
+  primary: ""           # the single metric that decides the claim (e.g. "test-suite pass rate")
+  direction: ""         # higher-is-better | lower-is-better
+  secondary: []         # e.g. for RAG: ["retrieval_recall", "retrieval_precision"] measured SEPARATELY
+  target_margin: ""     # the margin M you expect/need
+
+data:
+  shape: ""             # labeled-set | document-corpus | reward-signal | few-shot | none
+  source: ""
+  size: ""
+  contamination_risk: ""   # could the model have seen the test set? prefer LiveCodeBench/LiveBench/MMLU-Pro
+
+anchor_paper:
+  citation: ""          # canonical applied-AI paper for your domain (Chapter 5 sec 5.6)
+  verified_in: ""       # dblp | semantic-scholar | publisher  -- MUST be verified, not assumed
+
+failure_modes:          # each must have a real (not aspirational) mitigation
+  - mode: ""
+    mitigation: ""
+
+disclosure:
+  target_venue_family: ""   # ACM | IEEE | NeurIPS | ICLR | ACL | arXiv | other
+  requires_disclosure: ""   # yes | no (assistive-only)
+  where: ""                 # Acknowledgements | experimental-setup | submission-form

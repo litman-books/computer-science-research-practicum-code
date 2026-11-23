@@ -1,0 +1,55 @@
+% paper-skeleton.tex — minimal acmart submission skeleton for the Week 14 Draft Paper.
+% Swap the \documentclass line for IEEEtran if your target venue is IEEE:
+%   \documentclass[conference]{IEEEtran}
+% acmart.cls v2.18 (2026/06/01) and IEEEtran.cls v1.8b are pre-loaded on Overleaf.
+% Single-column "manuscript,review" is the ACM submission format; "anonymous" -> double-blind.
+
+\documentclass[manuscript,review,anonymous]{acmart}
+
+\begin{document}
+
+\title{<Your title: a claim, not a topic>}
+% Authors are hidden by "anonymous" for double-blind review; fill at camera-ready.
+
+\begin{abstract}
+% FIVE MOVES (chapter 14.2). Put a NUMBER in the result move.
+% [CONTEXT]      The world the problem lives in.
+% [GAP]          What is missing/wrong (the cited absence).
+% [APPROACH]     What you did that is new (the startling sentence).
+% [RESULT]       The finding, with effect size / CI.
+% [SIGNIFICANCE] Why a reader should care.
+\end{abstract}
+
+\maketitle
+
+\section{Introduction}
+% CARS, three moves (14.3): territory -> niche/gap -> occupy. End with a contributions list:
+% This paper makes the following contributions:
+%   C1. ...
+%   C2. ...
+%   C3. ...
+
+\section{Related Work}
+% POSITION, don't summarize (14.4). Group by approach; pull from your comparison matrix.
+% "Retrieval-based methods [x,y] achieve A but assume B; in contrast, we ..."
+
+\section{Methodology}
+% WHAT YOU DID, reproducibly (14.5). Data + splits, baselines, ablations, metric (+ construct),
+% seeds/runs, hardware, software versions. If an LLM was an instrument: model NAME, VERSION,
+% DATE, decoding settings (e.g. reasoning effort), prompt (long prompts -> appendix). No spin, no results here.
+
+\section{Results}
+% WHAT YOU FOUND (14.5). Tables + figures carry the load. Effect sizes + CIs, not bare p-values.
+% Report the spread across seeds. EVERY run goes in. No interpretation in this section.
+
+\section{Discussion}
+% WHAT IT MEANS (14.5, ch.13). Interpret, relate to prior work, limitations + threats to validity
+% (Cook & Campbell's four categories). Do NOT overclaim past what the CIs/effect sizes support.
+
+\section{Conclusion and Future Work}
+% The takeaway and the open doors. State the contribution plainly; don't hedge it away.
+
+\bibliographystyle{ACM-Reference-Format}   % use IEEEtran for IEEE
+\bibliography{references}                   % every entry verified against dblp / Semantic Scholar
+
+\end{document}

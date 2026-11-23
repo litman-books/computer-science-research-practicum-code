@@ -1,0 +1,55 @@
+# Domain-Specific AI Integration Proposal — <your title>
+
+**Author:** <name>  ·  **Domain:** <your CS domain>  ·  **Week 5**
+<!-- Fill each section. Keep it 3-5 pages. Delete the prompts in <angle brackets> as you go. -->
+<!-- Verify EVERY citation against dblp / Semantic Scholar before submitting (see verify_citations.py). -->
+
+## 1. Problem & Domain
+<The specific problem in your chosen domain and why it matters. One tight paragraph. Connect it to the
+gap from your Week 4 comparison matrix.>
+
+## 2. Failure Diagnosis
+<Is the current failure KNOWLEDGE (wrong facts), BEHAVIOR/FORM (right facts, wrong shape), or
+ELICITATION (it can but you can't reliably get it to)? Give evidence, not assertion. This determines
+which rung of the ladder you climb.>
+
+## 3. Method Selection (walk the ladder)
+<The method you choose. Then one sentence each for the rungs BELOW your choice, explaining why they
+do not suffice. "Prompting alone fails because ___. RAG fails because ___. Therefore <method>."
+Reference your method-fit-matrix.csv.>
+
+## 4. Baseline & Metric
+<The single sentence: "<Method X> beats <baseline Y> on <metric Z> by <margin M>." Y must be simple
+and, ideally, non-AI. Z must be measurable. Reference baseline-card.yaml. For RAG, name retrieval
+recall/precision as a SEPARATE measurement from answer accuracy.>
+
+## 5. Data & Canonical Anchor
+<Your data shape (labeled-set / document-corpus / reward-signal / few-shot) — be honest; data is the
+binding constraint. Then ONE verified canonical paper for your domain (Chapter 5 sec 5.7 or, if your domain
+isn't in that table, one canonical paper you verify in dblp) with its real metadata.
+Confirm it exists in dblp/Semantic Scholar.>
+
+## 6. Failure Modes & Disclosure
+<Each failure mode for your method (Chapter 5 sec 5.8) with a one-line mitigation:
+- Citation hallucination -> verify every reference against dblp.
+- Long-context fabrication -> cap context / spot-check.
+- Retrieval-vs-reasoning confound (RAG) -> instrument retrieval separately.
+- Benchmark contamination -> prefer LiveCodeBench/LiveBench/MMLU-Pro; report risk.
+Then your venue disclosure stance (Appendix C): venue family, whether disclosure is required, and where
+it goes (Acknowledgements / experimental-setup / submission form).>
+
+## 7. Open-Weight vs. Commercial
+<If your method uses an LLM: name the open-weight model and the commercial model you will run side
+by side (exact model IDs, with the date you checked them; for a model you use through a chat
+platform, the name exactly as the platform shows it), and predict where they will differ:
+accuracy, cost, latency, reproducibility (Chapter 5 sec 5.7). If your method uses no LLM, say so
+in one line. Graded under method selection.>
+
+## AI-Assistance Disclosure
+<State plainly how you used AI in producing THIS proposal, per your target venue's policy. "The model
+did it" is never a defense; you own every claim and citation here.>
+
+## References
+<!-- Every entry must be verified. Run: python verify_citations.py --bib references.txt -->
+1.
+2.

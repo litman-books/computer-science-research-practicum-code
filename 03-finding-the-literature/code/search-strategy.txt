@@ -1,0 +1,58 @@
+# Search Strategy & Log — TEMPLATE
+
+Copy this into your research portfolio and fill it in for YOUR question.
+A complete log is required for the Annotated Bibliography (project-03).
+
+---
+
+## 1. The research question (from Chapter 2)
+
+> _Paste your sharpened research question here._
+
+## 2. Keyword grid
+
+Synonyms DOWN a column (joined by OR). Concepts ACROSS columns (joined by AND).
+Include the terms ADJACENT subfields use — that's where the iceberg hides.
+
+| Concept A (method) | Concept B (task)   | Concept C (domain) |
+|--------------------|--------------------|--------------------|
+| "large language model" | "query optimization" | database |
+| LLM                | "query rewriting"  | DBMS               |
+| transformer        | "cardinality estimation" | SQL          |
+| _your terms..._    | _..._              | _..._              |
+
+## 3. Assembled Boolean query
+
+```text
+("large language model" OR LLM OR transformer)
+AND ("query optimization" OR "query rewriting" OR "cardinality estimation")
+AND (database OR DBMS OR SQL)
+```
+
+Adapt syntax per database (Scholar: intitle:, quotes; ACM DL / IEEE Xplore: advanced-search forms).
+
+## 4. Search log
+
+Log EVERY search. This makes the review reproducible and answers the reviewer's
+"did you consider X?" with a date instead of a shrug.
+
+| Date       | Database      | Exact query string                | Hits | Kept | Notes                       |
+|------------|---------------|-----------------------------------|------|------|-----------------------------|
+| 2026-09-09 | ACM DL        | (LLM AND "query optimization")    | 312  | 9    | most relevant for DB venue  |
+| 2026-09-09 | arXiv cs.DB   | LLM query optimization            | 88   | 6    | preprints — verify status   |
+| 2026-09-10 | IEEE Xplore   | "language model" "query" database | 41   | 2    | via library proxy           |
+| ...        | ...           | ...                               |      |      |                             |
+
+## 5. Snowball log (SNOWBALL layer)
+
+| Seed paper       | Tool             | Direction | New keepers found |
+|------------------|------------------|-----------|-------------------|
+| LLMSTEER (arXiv:2411.02862) | Connected Papers | both | 4 |
+| LLMSTEER         | Research Rabbit  | forward   | 3 (2 not in CP)   |
+
+## 6. Coverage check
+
+- [ ] Foundational / seminal work present
+- [ ] Recent state-of-the-art (last ~3 years) present
+- [ ] At least one critical / contrasting voice present
+- Thinnest bucket: __________  → next query to fill it: __________

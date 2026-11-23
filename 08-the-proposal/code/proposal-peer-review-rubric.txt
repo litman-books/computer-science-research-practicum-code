@@ -1,0 +1,31 @@
+# Proposal Peer-Review Rubric (worksheet)
+
+Score each dimension 1–5 (1 = fatal flaw, 3 = present but weak, 5 = publication-grade).
+Then write the **one constructive question** that, if the author answered it well, would
+improve the proposal most. A good review is specific, cited to a line, and kind.
+
+| Dimension | What you are scoring | 1 | 5 | Score | Evidence (slide/line #) |
+|---|---|---|---|---|---|
+| Problem | A real, bounded gap — not "X is important" | "important" hand-wave | a cited absence in prior work | | |
+| Novelty | What is genuinely new vs. prior art | restates known result | a claim no one has tested | | |
+| Method | A reproducible plan: baseline, ablation, metric | "I'll use an LLM" | seeds, splits, baselines named | | |
+| Feasibility | Doable in the remaining weeks with the compute on hand | needs a cluster they lack | scoped to a laptop/Colab pilot | | |
+| Validity | Threats named and addressed (Cook & Campbell ×4) | no threats section | each threat → a mitigation | | |
+| Clarity | A stranger could restate the RQ in one sentence | jargon fog | one-sentence RQ on slide 1 | | |
+| Integrity | Honest stats plan; AI use disclosed per venue | p-value fishing implied | preregistration / multi-seed plan | | |
+
+**Total / 35:** ________
+
+**The one question that improves it most:**
+> _______________________________________________________________
+
+## How to write the question
+- Tie it to a *specific* weakness above (lowest score first).
+- Make it answerable — "What baseline would falsify your claim?" beats "Is this novel?"
+- Frame it as iron sharpening iron (Prov 27:17), not as a takedown. The goal is a
+  stronger paper, not a smaller author.
+
+## Reviewer's integrity note
+You are reading an unpublished proposal. Do not paste it into any public LLM (that is the
+confidentiality breach NeurIPS/IEEE reviewers are forbidden to commit). Review with your
+own judgment; the human owns the review.

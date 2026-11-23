@@ -1,0 +1,38 @@
+# Paper Anatomy — what each section actually does
+
+Use this as a reading template for the three papers you analyze this week.
+Read for the *job* each section performs, not the prose. A paper is an
+argument with a fixed structure; learn the structure once and every paper
+gets faster to read.
+
+| Section | The job it does | The one question to ask | Read it in pass… |
+|---|---|---|---|
+| Title | Names the contribution in a line | What is the claimed result? | 1 |
+| Abstract | The whole argument in ~200 words (Beck's 4 sentences: problem / why it matters / the contribution / the implication) | Could I restate the contribution from this alone? | 1 |
+| Introduction | Sets the territory, names the gap, states the contribution (Swales CARS: territory → niche → occupy) | What gap does this claim to fill? | 1 |
+| Related Work | Positions the paper against prior art | Whom does this beat, and on what? | 3 |
+| Method / Approach | What they did, reproducibly | Could another team rerun this from the text? | 2–3 |
+| Results | What they found — numbers, tables, figures | Are there baselines, error bars, effect sizes — or one lucky run? | 2 |
+| Discussion | What it means; limitations; threats to validity | What does the data *not* support that they might wish it did? | 3 |
+| Future Work | The open problems they hand you | Is there a practicum-sized question hiding here? | 1 (mine for your topic) |
+| References | The citation graph — backward links to chase | Which 2–3 of these are the seeds to snowball? | 1 |
+
+## The three-pass method (Keshav)
+
+- **Pass 1 (~5 min):** title, abstract, intro, section headings, conclusion,
+  references skim. Decide: is this relevant? Can you state the five Cs —
+  Category, Context, Correctness, Contributions, Clarity?
+- **Pass 2 (~1 hr):** read figures, tables, and the body — but skip proofs and
+  fine detail. Mark unread references to chase.
+- **Pass 3 (re-implement in your head):** challenge every assumption; could you
+  reproduce it? This is the pass that surfaces the gap you will occupy.
+
+## Integrity note (read before you cite any of these)
+
+Every reference you pull from a paper — and *especially* any reference an LLM
+hands you — must be verified against a real index (dblp, Semantic Scholar, the
+publisher) before it enters your portfolio. Walters & Wilder (2023) found 55% of
+GPT-3.5 and 18% of GPT-4 citations were entirely fabricated. A hallucinated
+citation in your bibliography is not a typo; at venues like ICCV it is grounds
+for rejection without review. Verify the title, the authors, the venue, and the
+year. Every one.

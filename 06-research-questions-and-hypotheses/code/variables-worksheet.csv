@@ -1,0 +1,9 @@
+role,variable,operationalization,notes
+IV,,,exactly ONE for a clean causal claim; vary only this
+DV_primary,,,the outcome you predict the IV will move; define against a gold standard
+DV_secondary,,,the cost/tradeoff that keeps you honest (latency / false positives / compute / tokens)
+controlled,base_model,e.g. claude-opus-5-5 (record the exact model ID + date),closed models drift; pin the exact version
+controlled,decoding,e.g. reasoning effort medium (or the full sampling config of an open-weight model),hold constant across all conditions
+controlled,data_split,identical PR/example set + fixed split,no peeking at the test split until the end
+controlled,seeds,>= 5 fixed seeds,single-run wins are statistically empty (Bouthillier 2021)
+controlled,compute,same machine / context-length cap,rule out hardware as a confound

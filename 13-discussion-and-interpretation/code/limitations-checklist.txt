@@ -1,0 +1,34 @@
+# Limitations Checklist — one specific threat per validity category
+
+Cook & Campbell (1979), four categories; adapted for software engineering by
+Wohlin et al., *Experimentation in Software Engineering*. A limitations section is
+a **map of where you stopped**, not a generic confession. "More experiments could
+be done" is banned. Each line must name a *specific* uncontrolled threat and say
+*how* it bounds your conclusion.
+
+---
+
+## Statistical conclusion validity — *are the inferences from the data sound?*
+- [ ] How many seeds/runs? Do your error bars actually support the comparison? (Bouthillier 2021)
+- [ ] Did you correct for multiple comparisons if you ran several tests? (Holm / Benjamini-Hochberg)
+- [ ] **Your specific limitation:** _______________________________________________
+
+## Internal validity — *did X actually cause Y, or a confound?*
+- [ ] Which components are entangled? (e.g., adapter + reranker not separately ablated)
+- [ ] Any uncontrolled difference between conditions besides the one you're studying?
+- [ ] **Your specific limitation:** _______________________________________________
+
+## Construct validity — *does the metric measure the real thing?*
+- [ ] Does your headline metric capture the construct, or a proxy? (resolve rate vs. review quality)
+- [ ] **Benchmark contamination:** could the test set be in the model's training data?
+      Record model **version + date** (closed models drift). State decontamination if known.
+- [ ] **Your specific limitation:** _______________________________________________
+
+## External validity — *does it generalize beyond this setting?*
+- [ ] One dataset / language / domain only? Say so explicitly.
+- [ ] One model family? Untested transfer = a bounded claim, not a broken one.
+- [ ] **Your specific limitation:** _______________________________________________
+
+---
+
+Limitations stated become future work; limitations hidden become rejections.

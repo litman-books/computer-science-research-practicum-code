@@ -1,0 +1,47 @@
+# Point-by-Point Response (Rebuttal) Skeleton
+
+A rebuttal answers reviewers; it does not argue with them. Civil, specific, evidence-first.
+NeurIPS 2026: each response is capped at 10,000 characters per review, plain text +
+OpenReview markdown, NO file uploads (only an anonymized code link if a reviewer asked).
+New results are allowed, but the ORIGINAL submission stays the basis for the decision —
+so promise changes you can actually make.
+
+Re-verify the exact limit for YOUR target venue/year before relying on a number here.
+
+---
+
+## Global response (one short paragraph, all reviewers)
+Thank the reviewers. State the 2–3 most important changes you made across the board.
+"We thank the reviewers for their careful reading. In response we (1) added a multi-seed
+table with 95% CIs (R1, R3), (2) corrected the baseline in §4.2 (R2), and (3) clarified
+the data split (R1)."
+
+## Per-reviewer, per-comment
+Quote or paraphrase the comment, then respond. Use a stable tag so reviewers can find it.
+
+### Reviewer 1
+> **R1.1 (MAJOR):** "Results are single-seed; the gain may be noise."
+**Response — Done.** We reran across 10 seeds (Table 3, revised). The mean gain is
++2.4 points (95% CI [1.1, 3.7]); ASO with τ=0.2 vs. the baseline confirms stochastic
+dominance. Text updated in §5.1.
+
+> **R1.2 (CLARIFY):** "Was scaling fit on train only?"
+**Response — Clarified.** Yes. The scaler is fit on the training fold only, inside the
+CV loop, to avoid leakage (Kapoor & Narayanan 2023). We made this explicit in §4.1.
+
+### Reviewer 2
+> **R2.1 (MINOR):** "Typo in Eq. 3 / Figure 2 caption unclear."
+**Response — Fixed.** Corrected; caption now stands alone.
+
+> **R2.2 (DISAGREE — handle with care):** "The contribution is incremental."
+**Response — Respectfully clarified.** We see the contribution as X, which prior work
+[7, 12] did not address because Y; we added a sentence to the intro making the
+delta explicit. We do not claim a new architecture; we claim a measured result. We have
+revised the claim language to match what the evidence supports.
+
+---
+
+## Three rules
+1. Lead with the verb: **Done / Fixed / Clarified / Added / Respectfully clarified.**
+2. Never concede a result you didn't actually change, and never claim a change you can't make.
+3. If a reviewer is simply wrong, show the evidence calmly — don't get the last word, get the right one.

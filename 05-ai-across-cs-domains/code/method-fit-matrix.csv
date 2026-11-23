@@ -1,0 +1,7 @@
+candidate_method,task_shape,data_shape,measured_failure,ladder_rung,baseline_to_beat,deciding_metric,primary_failure_mode,canonical_anchor,fits_my_compute,chosen
+Agentic code-review (LangGraph),sequential-decision,document-corpus,behavior,agent,human-only review,issues-found / false-positive rate,trajectory not logged -> irreproducible,SWE-bench Verified; c-CRAB (arXiv:2603.23448),yes (hosted model),
+RAG over project docs,retrieve-facts,document-corpus,knowledge,rag,base model no-retrieval,answer accuracy + retrieval recall,retrieval miss blamed on LLM,arXiv:2501.09136 (Agentic RAG survey),yes,
+RL congestion control,sequential-decision,reward-signal,behavior,rl,Cubic / BBR,throughput vs latency tradeoff,reward mis-specification; sim-to-real gap,Aurora (Jay et al. ICML 2019),yes (small sim),
+YOUR-METHOD-1,,,,,,,,,,
+YOUR-METHOD-2,,,,,,,,,,
+YOUR-METHOD-3,,,,,,,,,,
